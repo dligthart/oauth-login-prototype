@@ -1,1 +1,1 @@
-# oauth-login-prototype
+sudo DEBUG=tedxlogin:* npm start

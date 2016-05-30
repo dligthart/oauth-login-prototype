@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+	 <%= title %>
+	</title>
+	<% include partials/head.ejs %>
+</head>
+<body>
+	<header>
+	</header>
+	<main>
+		<div id="main" class="container">
+
+			<div class="row">
+						<button id="btn-facebook" class="btn btn-default btn-lg"><span class="fa fa-facebook"></span> Login with facebook</button>
+						<button id="btn-linkedin" class="btn btn-default btn-lg"><span class="fa fa-linkedin"></span> Login with linkedin</button>
+			</div>
+
+			<div class="row">
+				&nbsp;
+			</div>
+
+			<!-- signup -->
+			<div class="row signup-form">
+				<form class="form-horizontal" method="post" role="form" autocomplete="off" name="signupForm" id="signupForm">
+					<div class="form-group has-success">
+						<div class="input-group">
+							<input type="text" class="firstname form-control noradius input-lg" name="firstname" id="firstname" placeholder="Firstname">
+						</div>
+					</div>
+					<div class="form-group has-success">
+						<div class="input-group">
+							<input type="text" class="lastname form-control noradius input-lg" name="lastname" id="lastname" placeholder="Lastname">
+						</div>
+					</div>
+					<div class="form-group has-success">
+						<div class="input-group">
+							<input type="text" class="email form-control noradius input-lg" placeholder="Email" name="email" id="email" placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group has-success">
+						<div class="input-group">
+							<input type="password" class="password form-control noradius input-lg" placeholder="Password" name="password" id="password" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-group has-success">
+						<div class="input-group">
+							<input type="password" class="password form-control noradius input-lg" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
+						</div>
+					</div>
+					<div class="form-group has-success">
+						<div class="input-group">
+							<button id="register" class="btn btn-primary btn-lg">Register</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- signin -->
+			<div class="row signin-form">
+				<h3>Signin</h3>
+				<form class="form-horizontal" method="post" role="form" autocomplete="off" name="signinForm" id="signinForm">
+					<div class="form-group has-success">
+						<div class="input-group">
+							<input type="text" class="form-control noradius input-lg" name="email" id="email" placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group has-success">
+						<div class="input-group">
+							<input type="password" class="password form-control noradius input-lg" placeholder="Password" name="password" id="password" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-group has-success">
+						<div class="input-group">
+							<button id="login" class="btn btn-primary btn-lg">Login</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</main>
+	<footer>
+	</footer>
+</body>
+</html>
